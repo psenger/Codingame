@@ -27,9 +27,6 @@ public class OnBoarding {
             } else {
                 System.out.println(enemy1);
             }
-            // To debug: System.err.println("Debug messages...");
-
-            // System.out.println("name of the enemy"); // You have to output a correct ship name to shoot ("Buzz", enemy1, enemy2, ...)
         }
     }
 }
