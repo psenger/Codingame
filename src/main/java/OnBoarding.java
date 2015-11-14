@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 /**
- * <p></p>
+ * CodinGame planet is being attacked by slimy insectoid aliens.
+ * <---
+ * Hint:To protect the planet, you can implement the pseudo-code provided in the statement, below the player.
  *
  * @author psenger
  * @version 1.0
@@ -11,7 +13,6 @@ import java.util.Scanner;
 public class OnBoarding {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
-
         // game loop
         while (true) {
             String enemy1 = in.next(); // name of enemy 1
