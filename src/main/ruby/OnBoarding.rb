@@ -11,7 +11,7 @@ loop do
   enemy_2 = gets.chomp # name of enemy 2
   dist_2 = gets.to_i # distance to enemy 2
 
-  if dist_1 >= dist_2 then
+  if dist_1 >= dist_2
     puts enemy_2
   elsif dist_2 > dist_1 then
     puts enemy_1

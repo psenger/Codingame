@@ -16,12 +16,8 @@ public class Skynet {
         int gap = in.nextInt(); // the length of the gap.
         int platform = in.nextInt(); // the length of the landing platform.
 
-        //System.err.println("road = " + road);
-        //System.err.println("gap = " + gap);
-        //System.err.println("platform = " + platform);
-
         int targetJumpSpeed = calculateOptimalJumpSpeedNeededToJumpTheGap(gap);
-        // System.err.println("targetJumpSpeed = " + targetJumpSpeed);
+
         boolean weHaveJumped = false;
 
         // game loop
