@@ -16,18 +16,26 @@ public class Temperatures {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt(); // the number of temperatures to analyse
-        in.nextLine();
-        String temps = in.nextLine(); // the n temperatures expressed as integers ranging from -273 to 5526
         int min = 0;
+        int[] alltemps = new int[]{};
         if ( n > 0 ) {
-            int[] alltemps = convertToInt( temps.split(" ") );
+            in.nextLine();
+            String temps = in.nextLine(); // the n temperatures expressed as integers ranging from -273 to 5526
+            alltemps = convertToInt( temps.split(" ") );
             min = Integer.MAX_VALUE;
             for (int alltemp : alltemps) {
-                int temp = Math.abs(alltemp);
-                if (temp <= min) {
-                    min = temp;
+                if ( Math.abs(alltemp) < Math.abs(min) ) {
+                    min = alltemp;
+                } else if ( Math.abs(alltemp) == Math.abs(min) ){
+                    if ( alltemp < min ) {
+                        min = min;
+                    } else if ( alltemp > min ) {
+                        min = alltemp;
+                    }
                 }
             }
+        } else {
+            min = 0;
         }
         System.out.println( min );
     }
