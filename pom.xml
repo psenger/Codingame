@@ -4,6 +4,14 @@
     <artifactId>my-codingame</artifactId>
     <version>1</version>
 
+    <dependencies>
+        <dependency>
+            <artifactId>gs-core</artifactId>
+            <groupId>org.graphstream</groupId>
+            <version>1.3</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
